@@ -158,16 +158,23 @@ a {
 
 /* Player - Toolbar */
 
+.toolbar {
+    gap: 15px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
 
 .toolbar-player {
     width: 50%;
 }
 
-.toolbar-album, 
+.toolbar-album,
 .toolbar-controls {
     width: 230px;
-    padding: 5px 10px;
-    
+}
+
+.toolbar-player {
+    gap: 10px;
 }
 
 .album-img {
@@ -182,16 +189,98 @@ a {
 }
 
 .toolbar-album {
-    gap: 20px;
+    gap: 10px;
 }
 
-.album-info {
+.toolbar-album .album-song {
     font-size: 10px;
+}
+
+.toolbar-album .album-name {
+    font-size: 12px;
 }
 
 .album-control {
     flex-wrap: wrap;
+    margin-left: auto;
 }
+
+.player-controls {
+    gap: 20px;
+}
+
+.play-icon {
+    font-size: 25px;
+}
+
+.time-bar {
+    background-color: var(--grey);
+    border-radius: 999px;
+    position: relative;
+}
+
+.time-progress {
+    width: 25%;
+    background-color: lightgray;
+    height: 8px;
+    border-radius: 999px;
+}
+
+.player-track-time {
+    gap: 15px;
+
+}
+
+.current-time, .total-time {
+    font-size: 12px;
+}
+
+.time-progress-handler {
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+    background-color: var(--light);
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    transform: translate(-50%, -20%);
+    display: none;
+}
+
+.time-bar:hover .time-progress-handler {
+    display: block;
+}
+
+.time-bar:hover .time-progress {
+    background-color: var(--yellow-green);
+}
+
+.toolbar-settings {
+    gap: 15px;
+}
+
+.toolbar-control-setting {
+    gap:15px
+}
+
+.control-track-time {
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive */

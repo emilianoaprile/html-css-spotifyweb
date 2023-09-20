@@ -30,8 +30,10 @@
         </div>
 
         <!-- Player -->
-        <aside class="toolbar flex justify-between">
-            <div class="toolbar-album align-center flex justify-between">
+        <aside class="toolbar flex justify-between align-center">
+
+            <div class="toolbar-album align-center flex">
+                
                 <div class="album flex align-center">
                     <img class="album-img" src="./img/sinister.jpeg" alt="">
 
@@ -51,8 +53,38 @@
                 </ul>
 
             </div>
-            <div class="toolbar-player">Player</div>
-            <div class="toolbar-controls">controls</div>
+            <div class="toolbar-player flex flex-column">
+                <ul class="player-controls flex justify-center align-center">
+                    <li class="control-icon"><i class="fa-solid fa-shuffle"></i></li>
+                    <li class="control-icon"><i class="fa-solid fa-backward-step"></i></li>
+                    <li class="control-icon play-icon"><i class="fa-regular fa-circle-play"></i></li>
+                    <li class="control-icon"><i class="fa-solid fa-forward-step"></i></li>
+                    <li class="control-icon"><i class="fa-solid fa-rotate-right"></i></li>
+                </ul>
+
+                <div class="player-track-time align-center flex">
+                    <div class="current-time">0.25</div>
+                    <div class="time-bar flex-grow">
+                        <div class="time-progress"></div>
+                        <div class="time-progress-handler"></div>
+                    </div>
+                    <div class="total-time">4.35</div>
+                </div>
+            </div>
+            <div class="toolbar-settings flex">
+                <ul class="toolbar-control-setting flex align-center">
+                    <li class="control-icon"><i class="fa-solid fa-bars"></i></li>
+                    <li class="control-icon"><i class="fa-solid fa-display"></i></li>
+                    <li class="control-icon"><i class="fa-solid fa-volume-high"></i></li>
+                </ul>
+
+                <div class="control-track-time align-center flex flex-grow">
+                    <div class="time-bar flex-grow">
+                        <div class="time-progress"></div>
+                        <div class="time-progress-handler"></div>
+                    </div>
+                </div>
+            </div>
 
         </aside>
     </div>
