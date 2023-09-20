@@ -15,6 +15,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    color: var(--light);
 }
 
 
@@ -119,22 +120,30 @@ a {
     flex-direction: column;
 }
 
-.white-text {
-    color: white;
+.color-grey {
+    color: var(--grey);
 }
 
 .flex-grow {
     flex-grow: 1;
 }
 
-
 #app {
     height: 100vh;
+}
+
+
+#app,
+.app-content,
+.main-content,
+.toolbar,
+.side-bar {
+
     overflow: hidden;
 }
 
 .side-bar {
-    width: 230px;
+    width: 50px;
     background-color: black;
 }
 
@@ -147,10 +156,78 @@ a {
     background-color: var(--blue-grey);
 }
 
+/* Player - Toolbar */
 
 
+.toolbar-player {
+    width: 50%;
+}
+
+.toolbar-album, 
+.toolbar-controls {
+    width: 230px;
+    padding: 5px 10px;
+    
+}
+
+.album-img {
+    width: 45px;
+    aspect-ratio: 1;
+    /* width: 100%; */
+}
+
+.album, 
+.album-control {
+    gap: 10px;
+}
+
+.toolbar-album {
+    gap: 20px;
+}
+
+.album-info {
+    font-size: 10px;
+}
+
+.album-control {
+    flex-wrap: wrap;
+}
 
 
+/* Responsive */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+    .side-bar {
+        width: 230px;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .album-control {
+        flex-wrap: nowrap;
+    }
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
 
 /* debug */
 .debug .container,
@@ -177,6 +254,18 @@ a {
 .debug .main-content {
     border: 1px solid green;
 }
+
+.debug .toolbar-album,
+.debug .toolbar-player,
+.debug .toolbar-controls {
+    border: 1px solid yellow;
+}
+
+.debug .album,
+.debug .album-control {
+    border: 1px solid lightblue;
+}
+
 
 
 

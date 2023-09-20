@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/app.css">
+    <script src="https://kit.fontawesome.com/7d64c20f84.js" crossorigin="anonymous"></script>
     <title>Spotify Web</title>
 </head>
+
 <body class="debu">
     <!-- Page Wrapper -->
     <div id="app" class="flex flex-column">
-        <div class="app-content flex-grow flex ">
+        <div class="app-content flex-grow flex">
             <aside class="side-bar">
                 <nav>
 
@@ -21,14 +24,38 @@
             <main class="main-content">
 
                 <!-- Main content - Brani -->
-                
+
             </main>
-            
+
         </div>
 
-        <aside class="toolbar">
-            <!-- Player -->
+        <!-- Player -->
+        <aside class="toolbar flex justify-between">
+            <div class="toolbar-album align-center flex justify-between">
+                <div class="album flex align-center">
+                    <img class="album-img" src="./img/sinister.jpeg" alt="">
+
+                    <div class="album-info">
+                        <h4 class="album-name">Sinister</h4>
+                        <p class="album-song color-grey">Brano Nome</p>
+                    </div>
+
+                </div>
+
+                <ul class="album-control flex">
+                    <li class="control-icon color-grey">
+                        <i class="fa-regular fa-heart"></i></li>
+                    <li class="control-icon color-grey">
+                        <i class="fa-regular fa-folder"></i>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="toolbar-player">Player</div>
+            <div class="toolbar-controls">controls</div>
+
         </aside>
     </div>
 </body>
+
 </html>
