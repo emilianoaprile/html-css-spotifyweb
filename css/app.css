@@ -1,5 +1,5 @@
 :root {
-    --blue-grey: #141922 ;
+    --blue-grey: #141922;
     --dark-grey: #282828;
     --light: #FFFFFF;
     --yellow-green: #aeff2e;
@@ -183,7 +183,7 @@ a {
     /* width: 100%; */
 }
 
-.album, 
+.album,
 .album-control {
     gap: 15px;
 }
@@ -202,7 +202,6 @@ a {
 
 .album-control {
     flex-wrap: wrap;
-    /* margin-left: auto; */
 }
 
 .player-controls {
@@ -231,7 +230,8 @@ a {
 
 }
 
-.current-time, .total-time {
+.current-time,
+.total-time {
     font-size: 12px;
 }
 
@@ -260,7 +260,7 @@ a {
 }
 
 .toolbar-control-setting {
-    gap:15px
+    gap: 15px
 }
 
 .control-track-time {
@@ -269,10 +269,6 @@ a {
 
 /* Side Bar - Nav menu */
 
-/* .side-bar {
-    padding: 20px;
-} */
-
 .navbar-logo {
     padding-top: 20px;
 }
@@ -280,6 +276,7 @@ a {
 .navbar-logo-img {
     width: 130px;
     padding-left: 20px;
+    display: none;
 }
 
 .navbar p {
@@ -303,16 +300,11 @@ a {
     gap: 10px;
 }
 
-.navbar-functions > * {
-    padding-left: 20px;
+.navbar-functions>* {
     gap: 5px;
 }
 
-.playlist > * {
-    padding-left: 20px;
-}
-
-.playlist, 
+.playlist,
 .add-playlist,
 .download-app,
 .user-profile {
@@ -320,8 +312,9 @@ a {
     gap: 10px;
 }
 
-.profile > * {
-    padding-left: 20px;
+.add-playlist,
+.playlist-title {
+    margin-bottom: 15px;
 }
 
 .profile {
@@ -342,12 +335,14 @@ a {
 
 .side-bar {
     gap: 25px;
-    padding-right: 20px;
     padding-bottom: 20px;
+    align-items: center;
 }
 
 .download-app {
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
 }
 
 .download-app::after {
@@ -356,6 +351,7 @@ a {
     width: 100%;
     color: var(--grey);
     margin-bottom: 10px;
+    display: none;
 }
 
 .user-name {
@@ -367,6 +363,22 @@ a {
     font-size: 12px;
 }
 
+.logo-sm {
+    height: 35px;
+}
+
+.navbar p {
+    display: none;
+}
+
+.playlist {
+    display: none;
+}
+
+.user-name,
+.download-cta {
+    display: none;
+}
 
 
 
@@ -387,41 +399,89 @@ a {
 /* Responsive */
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
 
     .side-bar {
         width: 230px;
+        align-items: flex-start;
     }
 
     .album-control {
         flex-wrap: nowrap;
     }
 
+    .navbar p {
+        display: block;
+    }
+
+    .playlist {
+        display: block;
+    }
+
+    .user-name,
+    .download-cta {
+        display: block;
+    }
+
+    .logo-lg {
+        display: block;
+    }
+
+    .logo-sm {
+        display: none;
+    }
+
+    .download-app::after {
+        content: '';
+        border-bottom: 1px solid;
+        width: 100%;
+        color: var(--grey);
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .side-bar {
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .profile {
+        margin-top: auto;
+        width: 100%;
+    }
+
+    .profile>* {
+        padding-left: 20px;
+    }
+
+    .playlist>* {
+        padding-left: 20px;
+    }
+
+    .navbar-functions>* {
+        padding-left: 20px;
+    }
+
+    .download-app {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    
-    
-}
+@media (min-width: 768px) {}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    
-
-}
+@media (min-width: 992px) {}
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-    
-
-}
+@media (min-width: 1200px) {}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-
-}
+@media (min-width: 1400px) {}
 
 /* debug */
 .debug .container,
@@ -463,7 +523,3 @@ a {
 .debug .album-control {
     border: 1px solid lightblue;
 }
-
-
-
-
