@@ -273,12 +273,21 @@ a {
     padding: 20px;
 } */
 
+.navbar-logo {
+    padding-top: 20px;
+}
+
 .navbar-logo-img {
     width: 130px;
     padding-left: 20px;
 }
 
 .navbar p {
+    font-size: 13px;
+}
+
+.playlist-menu,
+.download-cta {
     font-size: 13px;
 }
 
@@ -296,7 +305,69 @@ a {
 
 .navbar-functions > * {
     padding-left: 20px;
+    gap: 5px;
 }
+
+.playlist > * {
+    padding-left: 20px;
+}
+
+.playlist, 
+.add-playlist,
+.download-app,
+.user-profile {
+
+    gap: 10px;
+}
+
+.profile > * {
+    padding-left: 20px;
+}
+
+.profile {
+    margin-top: auto;
+}
+
+.plus-icon {
+    font-size: 35px;
+}
+
+.playlist-title {
+    text-transform: uppercase;
+}
+
+.playlist-menu {
+    gap: 25px;
+}
+
+.side-bar {
+    gap: 25px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.download-app {
+    flex-wrap: wrap;
+}
+
+.download-app::after {
+    content: '';
+    border-bottom: 1px solid;
+    width: 100%;
+    color: var(--grey);
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.fa-circle-down {
+    font-size: 12px;
+}
+
+
 
 
 
@@ -382,7 +453,9 @@ a {
 .debug .toolbar-player,
 .debug .toolbar-controls,
 .debug .navbar-logo,
-.debug .navbar-functions {
+.debug .navbar-functions,
+.debug .playlist,
+.debug .profile {
     border: 1px solid yellow;
 }
 

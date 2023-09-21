@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/app.css">
     <script src="https://kit.fontawesome.com/7d64c20f84.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>Spotify Web</title>
 </head>
 
@@ -13,31 +17,66 @@
     <!-- Page Wrapper -->
     <div id="app" class="flex flex-column">
         <div class="app-content flex-grow flex">
-            <aside class="side-bar">
+            <aside class="side-bar flex flex-column">
 
                 <div class="navbar-logo">
                     <img class="navbar-logo-img" src="./img/logo.svg" alt="">
                 </div>
 
                 <nav class="navbar">
-                    <div class="navbar-functions">
+                    <div class="navbar-functions flex flex-column">
                         <div class="function-home flex align-center">
                             <img src="./img/home.svg" alt="">
-                            <p class="color-grey">Home</p> 
+                            <p class="color-grey">Home</p>
                         </div>
 
                         <div class="navbar-search flex align-center">
                             <img src="./img/search.svg" alt="">
 
-                            <p class="color-grey">Cerca</p> 
+                            <p class="color-grey">Cerca</p>
                         </div>
 
                         <div class="navbar-library flex align-center">
                             <img src="./img/libreria.svg" alt="">
-                            <p class="color-grey">La tua libreria</p> 
+                            <p class="color-grey">La tua libreria</p>
                         </div>
                     </div>
                 </nav>
+
+                <div class="playlist flex flex-column flex-grow">
+                    <div class="playlist-title">
+                        <h4>Playlist</h4>
+                    </div>
+
+
+                    <div class="add-playlist flex align-center">
+                        <i class="fa-solid fa-square-plus plus-icon"></i>
+                        <p class="color-grey">Crea la tua Playlist</p>
+                    </div>
+
+                    <ul class="playlist-menu flex flex-column">
+                        <li class="playlist-menu-item color-grey">Nome playlist</li>
+                        <li class="playlist-menu-item color-grey">Nome playlist</li>
+                        <li class="playlist-menu-item color-grey">Nome playlist</li>
+                        <li class="playlist-menu-item color-grey">Nome playlist</li>
+                        <li class="playlist-menu-item color-grey">Nome playlist</li>
+                        <li class="playlist-menu-item color-grey">Nome playlist</li>
+                        <li class="playlist-menu-item color-grey">Nome playlist</li>
+                    </ul>
+                </div>
+
+                <div class="profile">
+                    <div class="download-app flex align-center">
+                        <i class="fa-regular fa-circle-down color-grey"></i>
+                        <p class="download-cta color-grey">Installa app</p>
+                    </div>
+
+                    <div class="user-profile flex align-center">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <p class="user-name">John Doe</p>
+
+                    </div>
+                </div>
 
 
 
@@ -54,7 +93,7 @@
         <aside class="toolbar flex justify-between align-center">
 
             <div class="toolbar-album align-center flex">
-                
+
                 <div class="album flex align-center">
                     <img class="album-img" src="./img/sinister.jpeg" alt="">
 
@@ -67,7 +106,8 @@
 
                 <ul class="album-control flex">
                     <li class="control-icon color-grey">
-                        <i class="fa-regular fa-heart"></i></li>
+                        <i class="fa-regular fa-heart"></i>
+                    </li>
                     <li class="control-icon color-grey">
                         <i class="fa-regular fa-folder"></i>
                     </li>
