@@ -27,7 +27,7 @@ menu {
 }
 
 img {
-    width: 100%;
+    /* width: 100%; */
     display: block;
 }
 
@@ -185,11 +185,11 @@ a {
 
 .album, 
 .album-control {
-    gap: 10px;
+    gap: 15px;
 }
 
 .toolbar-album {
-    gap: 10px;
+    gap: 20px;
 }
 
 .toolbar-album .album-song {
@@ -202,7 +202,7 @@ a {
 
 .album-control {
     flex-wrap: wrap;
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 
 .player-controls {
@@ -264,9 +264,39 @@ a {
 }
 
 .control-track-time {
-    width: 100px;
+    width: 80px;
 }
 
+/* Side Bar - Nav menu */
+
+/* .side-bar {
+    padding: 20px;
+} */
+
+.navbar-logo-img {
+    width: 130px;
+    padding-left: 20px;
+}
+
+.navbar p {
+    font-size: 13px;
+}
+
+.navbar-functions img {
+    height: 28px;
+}
+
+.libreria-icon {
+    width: 22px;
+}
+
+.navbar-functions {
+    gap: 10px;
+}
+
+.navbar-functions > * {
+    padding-left: 20px;
+}
 
 
 
@@ -292,24 +322,28 @@ a {
         width: 230px;
     }
 
+    .album-control {
+        flex-wrap: nowrap;
+    }
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     
+    
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    
 
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-    .album-control {
-        flex-wrap: nowrap;
-    }
+    
 
 }
 
@@ -330,10 +364,10 @@ a {
     padding: 10px;
 }
 
-.debug [class^="col"] {
+/* .debug [class^="col"] {
     border: 2px solid black;
     padding: 10px;
-}
+} */
 
 .debug .app-content {
     border: 1px solid red;
@@ -346,7 +380,9 @@ a {
 
 .debug .toolbar-album,
 .debug .toolbar-player,
-.debug .toolbar-controls {
+.debug .toolbar-controls,
+.debug .navbar-logo,
+.debug .navbar-functions {
     border: 1px solid yellow;
 }
 
