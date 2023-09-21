@@ -31,27 +31,32 @@ img {
     display: block;
 }
 
+.col-2 > img {
+    width: 100%;
+}
+
 a {
     text-decoration: none;
     color: currentColor;
     display: inline-block;
 }
 
+.button {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
 /* layouts */
 
-/* .container {
-    max-width: 1180px;
+.container {
+    max-width: 1240px;
     margin: 0 auto;
 }
 
-.container-small {
-    max-width: 640px;
-    margin: 0 auto;
-} */
-
 .main-content {
     flex-grow: 1;
-    display: flex;
 }
 
 .app-side-bar {
@@ -63,7 +68,6 @@ a {
 
 .row {
     display: flex;
-    /* flex-wrap: wrap; */
 }
 
 .col-2 {
@@ -86,9 +90,9 @@ a {
     flex-basis: calc((100% / 12) * 12);
 }
 
-/* [class^="col"] {
-    padding: 0 12px;
-} */
+[class^="col-"] {
+    padding: 0 7px;
+}
 
 /* utility classes */
 
@@ -118,6 +122,10 @@ a {
 
 .flex-column {
     flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .color-grey {
@@ -180,7 +188,6 @@ a {
 .album-img {
     width: 45px;
     aspect-ratio: 1;
-    /* width: 100%; */
 }
 
 .album,
@@ -330,13 +337,14 @@ a {
 }
 
 .playlist-menu {
-    gap: 25px;
+    gap: 15px;
 }
 
 .side-bar {
     gap: 25px;
     padding-bottom: 20px;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .download-app {
@@ -380,6 +388,51 @@ a {
     display: none;
 }
 
+/* Main content */
+
+.upgrade-header {
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.upgrade-button {
+    padding: 15px 10px;
+}
+
+.content-page-menu {
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.content-menu-item {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.content-album-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content-section-title {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.col-2 p {
+    font-size: 13px;
+}
+
+.col-2 .content-section-title {
+    font-size: 16px;
+    font-weight: 700;
+}
 
 
 
@@ -484,8 +537,7 @@ a {
 @media (min-width: 1400px) {}
 
 /* debug */
-.debug .container,
-.debug .container-small {
+.debug .container {
     border: 2px solid red;
     padding: 10px;
 }
@@ -495,10 +547,11 @@ a {
     padding: 10px;
 }
 
-/* .debug [class^="col"] {
+.debug [class^="col-"] {
     border: 2px solid black;
-    padding: 10px;
-} */
+    /* padding: 10px; */
+    /* height: 100px; */
+}
 
 .debug .app-content {
     border: 1px solid red;
