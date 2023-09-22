@@ -53,8 +53,7 @@ a {
 .container {
     max-width: 1240px;
     margin: 0 auto;
-    padding-left: 14px;
-    padding-right: 14px;
+    
 }
 
 .main-content {
@@ -396,11 +395,12 @@ a {
 .upgrade-header {
     justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.2);
+    font-size: 13px;
 
 }
 
 .upgrade-button {
-    padding: 15px 10px;
+    padding: 15px 25px;
 }
 
 .content-page-menu {
@@ -409,6 +409,7 @@ a {
     flex-wrap: wrap;
     padding-bottom: 20px;
     padding-top: 20px;
+    margin-top: 70px;
 }
 
 .content-menu-item {
@@ -464,6 +465,17 @@ a {
     border-radius: 50%;
 }
 
+.upgrade-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.content-page {
+    padding-left: 14px;
+    padding-right: 14px;
+}
 
 
 
