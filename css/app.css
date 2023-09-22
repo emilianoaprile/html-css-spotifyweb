@@ -4,7 +4,6 @@
     --light: #FFFFFF;
     --yellow-green: #aeff2e;
     --grey: #6d6d6d;
-
 }
 
 * {
@@ -18,19 +17,17 @@ body {
     color: var(--light);
 }
 
-
 ul,
 ol,
 menu {
     list-style: none;
-
 }
 
 img {
     display: block;
 }
 
-.content-figure-album > img  {
+.content-figure-album>img {
     width: 100%;
 }
 
@@ -66,8 +63,6 @@ a {
     max-width: 230px;
     flex-shrink: 0;
 }
-
-
 
 .row {
     display: flex;
@@ -194,7 +189,7 @@ a {
 
 .album,
 .album-control {
-    gap: 15px;
+    gap: 10px;
 }
 
 .toolbar-album {
@@ -232,6 +227,7 @@ a {
     background-color: lightgray;
     height: 8px;
     border-radius: 999px;
+    transition: 0.2s;
 }
 
 .player-track-time {
@@ -253,11 +249,12 @@ a {
     top: 0px;
     left: 25%;
     transform: translate(-50%, -20%);
-    display: none;
+    opacity: 0;
+    transition: 0.2s;
 }
 
 .time-bar:hover .time-progress-handler {
-    display: block;
+    opacity: 1;
 }
 
 .time-bar:hover .time-progress {
@@ -397,7 +394,6 @@ a {
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 13px;
     z-index: 10;
-
 }
 
 .upgrade-button {
@@ -445,7 +441,6 @@ a {
 .col-12 .content-section-title {
     font-size: 20px;
     font-weight: 700;
-
 }
 
 .col-12 p {
@@ -481,7 +476,7 @@ a {
 
 
 
-/* hover details */
+/* HOVER DETAILS START */
 
 /* Main content - albums */
 
@@ -498,17 +493,16 @@ a {
     transition: all 0.2s ease-in-out;
 }
 
-.content-figure-album > .play-hovered {
+.content-figure-album>.play-hovered {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 30px;
 }
 
 .content-figure-album:hover .content-album-img {
     filter: brightness(0.5);
-    
 }
 
 .content-figure-album:hover .play-hovered {
@@ -520,6 +514,7 @@ a {
 .button {
     transition: 0.1s;
 }
+
 .button:hover {
     transform: scale(1.1);
     color: #aeff2e;
@@ -531,6 +526,7 @@ a {
 .content-menu-item a {
     transition: 0.2s;
 }
+
 .content-menu-item:hover a {
     color: var(--light);
 }
@@ -546,17 +542,47 @@ a {
     transition: 0.2s;
 }
 
-.function-home:hover p, 
+.function-home:hover p,
 .navbar-search:hover p,
 .navbar-library:hover p,
 .add-playlist:hover p,
-.download-app:hover p  {
+.download-app:hover p {
     color: var(--light);
 }
 
-.playlist-menu-item:hover  {
+.playlist-menu-item:hover {
     color: var(--light);
 }
+
+
+/* toolbar */
+
+.control-icon {
+    transition: 0.2s;
+
+}
+
+.control-icon:hover {
+    color: var(--light);
+}
+
+.album-song {
+    transition: 0.2s;
+}
+
+.album-song:hover {
+    color: var(--light);
+    text-decoration: underline;
+}
+
+.play-icon {
+    transition: 0.2s;
+}
+
+.play-icon:hover {
+    transform: scale(1.3);
+}
+
 
 
 
