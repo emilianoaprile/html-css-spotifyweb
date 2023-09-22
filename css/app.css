@@ -30,7 +30,7 @@ img {
     display: block;
 }
 
-.col-2>img {
+.content-figure-album > img  {
     width: 100%;
 }
 
@@ -479,14 +479,40 @@ a {
 
 
 
+/* hover details */
 
+/* Main content - albums */
 
+.content-figure-album {
+    position: relative;
+}
 
+.play-hovered {
+    opacity: 0;
+    transition: 0.2s;
+}
 
+.content-album-img {
+    transition: all 0.2s ease-in-out;
+}
 
+.content-figure-album > .play-hovered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+}
 
+.content-figure-album:hover .content-album-img {
+    filter: brightness(0.5);
+    
+}
 
-
+.content-figure-album:hover .play-hovered {
+    opacity: 1;
+}
+ 
 
 
 

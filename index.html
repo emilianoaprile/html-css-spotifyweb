@@ -16,7 +16,9 @@
 <body class="debu">
     <!-- Page Wrapper -->
     <div id="app" class="flex flex-column">
+
         <div class="app-content flex-grow flex">
+            <!-- side bar with logo and menu functions START -->
             <aside class="side-bar flex flex-column">
 
                 <div class="navbar-logo">
@@ -78,10 +80,10 @@
 
                     </div>
                 </div>
-
-
-
             </aside>
+            <!-- side bar with logo and menu functions END -->
+
+            <!-- main content with albums and upgrade bar START -->
             <main class="main-content">
                 <header class="upgrade-header flex align-center">
                     <div class="upgrade-button">
@@ -112,7 +114,7 @@
                             <li class="content-menu-item color-grey">
                                 <a href="#">nuove uscite</a>
                             </li>
-                            
+
                             <li class="content-menu-item color-grey">
                                 <a href="#">scopri</a>
                             </li>
@@ -126,33 +128,51 @@
                                     <h2 class="content-section-title">Recently played</h2>
                                 </div>
                                 <div class="col-2 centered-content">
-                                    <img class="content-album-img" src="./img/metal_lifting.jpg" alt="">
+                                    <figure class="content-figure-album">
+                                        <img class="content-album-img" src="./img/metal_lifting.jpg" alt="">
+                                        <i class="fa-regular fa-circle-play play-hovered"></i>
+                                    </figure>
                                     <h4 class="content-album-title">Heavy Metal</h4>
                                     <p class="color-grey">Subtitle</p>
                                 </div>
                                 <div class="col-2 centered-content">
-                                    <img class="content-album-img" src="./img/stranger.jpeg" alt="">
+                                    <figure class="content-figure-album">
+                                        <img class="content-album-img" src="./img/stranger.jpeg" alt="">
+                                        <i class="fa-regular fa-circle-play play-hovered"></i>
+                                    </figure>
                                     <h4 class="content-album-title">Stranger Things vol.1 (a Netflix Original Series
                                         Soundtrack)</h4>
                                     <p class="color-grey">Kyle Dixon and Michael Stein</p>
                                 </div>
                                 <div class="col-2 centered-content">
-                                    <img class="content-album-img" src="./img/aquietplace.jpeg" alt="">
+                                    <figure class="content-figure-album">
+                                        <img class="content-album-img" src="./img/aquietplace.jpeg" alt="">
+                                        <i class="fa-regular fa-circle-play play-hovered"></i>
+                                    </figure>
                                     <h4 class="content-album-title">A quite place</h4>
                                     <p class="color-grey">Subtitle</p>
                                 </div>
                                 <div class="col-2 centered-content">
-                                    <img class="content-album-img" src="./img/split.jpeg" alt="">
+                                    <figure class="content-figure-album">
+                                        <img class="content-album-img" src="./img/split.jpeg" alt="">
+                                        <i class="fa-regular fa-circle-play play-hovered"></i>
+                                    </figure>
                                     <h4 class="content-album-title">Split</h4>
                                     <p class="color-grey">Subtitle</p>
                                 </div>
                                 <div class="col-2 centered-content">
-                                    <img class="content-album-img" src="./img/cure.jpeg" alt="">
+                                    <figure class="content-figure-album">
+                                        <img class="content-album-img" src="./img/cure.jpeg" alt="">
+                                        <i class="fa-regular fa-circle-play play-hovered"></i>
+                                    </figure>
                                     <h4 class="content-album-title">A cure for wellness</h4>
                                     <p class="color-grey">Subtitle</p>
                                 </div>
                                 <div class="col-2 centered-content">
-                                    <img class="content-album-img" src="./img/sinister.jpeg" alt="">
+                                    <figure class="content-figure-album">
+                                        <img class="content-album-img" src="./img/sinister.jpeg" alt="">
+                                        <i class="fa-regular fa-circle-play play-hovered"></i>
+                                    </figure>
                                     <h4 class="content-album-title">Sinister</h4>
                                     <p class="color-grey">Subtitle</p>
                                 </div>
@@ -170,11 +190,17 @@
                                         suggerimenti</p>
                                 </div>
                                 <div class="col-2 centered-content">
-                                    <img class="content-album-img" src="./img/radar.jpeg" alt="">
+                                    <figure class="content-figure-album">
+                                        <img class="content-album-img" src="./img/radar.jpeg" alt="">
+                                        <i class="fa-regular fa-circle-play play-hovered"></i>
+                                    </figure>
                                     <h4 class="content-album-title">Release radar</h4>
                                 </div>
                                 <div class="col-2 centered-content">
-                                    <img class="content-album-img" src="./img/mixdaily.jpeg" alt="">
+                                    <figure class="content-figure-album">
+                                        <img class="content-album-img" src="./img/mixdaily.jpeg" alt="">
+                                        <i class="fa-regular fa-circle-play play-hovered"></i>
+                                    </figure>
                                     <h4 class="content-album-title">Daily Mix 1</h4>
                                 </div>
                             </div>
@@ -191,11 +217,17 @@
                                         suggerimenti</p>
                                 </div>
                                 <div class="col-2 centered-content">
-                                    <img class="content-album-img" src="./img/youg.jpeg" alt="">
+                                    <figure class="content-figure-album">
+                                        <img class="content-album-img" src="./img/youg.jpeg" alt="">
+                                        <i class="fa-regular fa-circle-play play-hovered"></i>
+                                    </figure>
                                     <h4 class="content-album-title">Luna del Ray</h4>
                                 </div>
                                 <div class="col-2 centered-content">
-                                    <img class="content-album-img" src="./img/einaudi.jpeg" alt="">
+                                    <figure class="content-figure-album">
+                                        <img class="content-album-img" src="./img/einaudi.jpeg" alt="">
+                                        <i class="fa-regular fa-circle-play play-hovered"></i>
+                                    </figure>
                                     <h4 class="content-album-title">Ludovico Enaudi</h4>
                                 </div>
                             </div>
@@ -208,8 +240,9 @@
             </main>
 
         </div>
+        <!-- main content with albums and upgrade bar END -->
 
-        <!-- Player -->
+        <!-- Player toolbar START -->
         <aside class="toolbar flex justify-between align-center">
 
             <div class="toolbar-album align-center flex">
@@ -268,6 +301,8 @@
             </div>
 
         </aside>
+        <!-- Player toolbar END -->
+
     </div>
 </body>
 
