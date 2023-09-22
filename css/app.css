@@ -27,7 +27,6 @@ menu {
 }
 
 img {
-    /* width: 100%; */
     display: block;
 }
 
@@ -53,7 +52,7 @@ a {
 .container {
     max-width: 1240px;
     margin: 0 auto;
-    
+
 }
 
 .main-content {
@@ -75,7 +74,7 @@ a {
 }
 
 .col-2 {
-    flex-basis: calc((100% / 12) * 2);
+    flex-basis: 50%;
 }
 
 .col-4 {
@@ -567,16 +566,32 @@ a {
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    .col-2 {
+        flex-basis: 25%;
+    }
+}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    .col-2 {
+        flex-basis: calc((100% / 12) * 2);
+    }
+}
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {}
+
+
+
+
+
+
 
 /* debug */
 .debug .container {
