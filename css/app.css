@@ -154,6 +154,7 @@ a {
 .side-bar {
     width: 50px;
     background-color: black;
+    z-index: 100;
 }
 
 .toolbar {
@@ -393,8 +394,9 @@ a {
 
 .upgrade-header {
     justify-content: flex-end;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     font-size: 13px;
+    z-index: 10;
 
 }
 
@@ -512,7 +514,50 @@ a {
 .content-figure-album:hover .play-hovered {
     opacity: 1;
 }
- 
+
+/* Main content - up grade bar */
+
+.button {
+    transition: 0.1s;
+}
+.button:hover {
+    transform: scale(1.1);
+    color: #aeff2e;
+    border-color: #aeff2e;
+}
+
+/* Main content - page menu */
+
+.content-menu-item a {
+    transition: 0.2s;
+}
+.content-menu-item:hover a {
+    color: var(--light);
+}
+
+/* side bar menu */
+
+.function-home p,
+.navbar-search p,
+.navbar-library p,
+.add-playlist p,
+.playlist-menu-item,
+.download-app p {
+    transition: 0.2s;
+}
+
+.function-home:hover p, 
+.navbar-search:hover p,
+.navbar-library:hover p,
+.add-playlist:hover p,
+.download-app:hover p  {
+    color: var(--light);
+}
+
+.playlist-menu-item:hover  {
+    color: var(--light);
+}
+
 
 
 
